@@ -10,23 +10,23 @@ public class Simple {
     private String name;
      
     @Attribute
-    private String index;
+    private int index;
  
     public Simple() {
         super();
     }
  
-    public Simple(String name, String index) {
+    public Simple(String name, int index) {
         super();
         this.name = name;
         this.index = index;
     }
  
-    public String getText() {
+    public String getName() {
         return name;
     }
  
-    public String getIndex() {
+    public int getIndex() {
         return index;
     }
 }

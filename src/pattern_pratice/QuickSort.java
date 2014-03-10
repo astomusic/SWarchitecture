@@ -1,18 +1,20 @@
-package pattern_pratice.sort;
+package pattern_pratice;
 
-public class QuickSort implements Sort{
+
+public class QuickSort implements iSort{
 	private int[] numbers;
 	private int number;
 	
 	@Override
-	public void sort(int[] values) {
+	public void doSort() {
 		// check for empty or null array
-		if (values == null || values.length == 0) {
-			return;
-		}
-		this.numbers = values;
-		number = values.length;
-		quicksort(0, number - 1);
+//		if (values == null || values.length == 0) {
+//			return;
+//		}
+//		this.numbers = values;
+//		number = values.length;
+//		quicksort(0, number - 1);
+		System.out.print("QuickSort");
 	}
 
 	private void quicksort(int low, int high) {
