@@ -8,7 +8,7 @@ import org.simpleframework.xml.core.Persister;
 public class Main {
 	public static void main(String[] args) {
 		Serializer serializer = new Persister();
-		File source = new File("/Users/astomusic/Documents/workspace/SWarchitecture/src/pattern_pratice/sort.xml");
+		File source = new File("/Users/astomusic/Documents/workspace/SWarchitecture/src/sort.xml");
 		int[] values = {30, 20, 10, 50, 80, 1};
 		
 		Simple simple = null;
