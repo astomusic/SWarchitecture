@@ -1,5 +1,5 @@
 package pattern_pratice;
 
 public interface iSort {
-	public void doSort();
+	public int[] doSort(int[] values);
 }

@@ -6,15 +6,17 @@ public class QuickSort implements iSort{
 	private int number;
 	
 	@Override
-	public void doSort() {
+	public int[] doSort(int[] values) {
+		System.out.println("QuickSort");
 		// check for empty or null array
-//		if (values == null || values.length == 0) {
-//			return;
-//		}
-//		this.numbers = values;
-//		number = values.length;
-//		quicksort(0, number - 1);
-		System.out.print("QuickSort");
+		if (values == null || values.length == 0) {
+			return numbers;
+		}
+		this.numbers = values;
+		number = values.length;
+		quicksort(0, number - 1);
+		
+		return numbers;
 	}
 
 	private void quicksort(int low, int high) {
